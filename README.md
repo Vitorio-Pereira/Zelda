@@ -8,3 +8,13 @@ To start the app, run:
 yarn install
 yarn start
 ```
+
+the start a docker:
+
+```sh
+yarn install --immutable
+yarn tsc
+yarn build:backend
+
+docker-compose up -d --build
+```
