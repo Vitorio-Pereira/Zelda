@@ -1,7 +1,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
+<<<<<<< HEAD
   name: adadawd
+=======
+  name: backstage-open
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
   description: An example of a Backstage application.
   # Example for optional annotations
   # annotations:

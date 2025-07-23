@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import React from 'react';
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
 import { Card, CardContent, Typography } from '@mui/material';
 
 export const HomeComponent = () => {

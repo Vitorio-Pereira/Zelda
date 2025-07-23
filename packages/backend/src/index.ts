@@ -52,6 +52,7 @@ backend.add(import('@backstage/plugin-search-backend-module-techdocs'));
 // kubernetes
 backend.add(import('@backstage/plugin-kubernetes-backend'));
 
+<<<<<<< HEAD
 import { stringifyEntityRef } from '@backstage/catalog-model';
 
 import { createBackendModule } from '@backstage/backend-plugin-api';
@@ -131,4 +132,6 @@ const customAuthResolver = createBackendModule({
 
 backend.add(customAuthResolver);
 
+=======
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
 backend.start();

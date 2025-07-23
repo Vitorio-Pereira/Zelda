@@ -36,6 +36,7 @@ import { CatalogGraphPage } from '@backstage/plugin-catalog-graph';
 import { RequirePermission } from '@backstage/plugin-permission-react';
 import { catalogEntityCreatePermission } from '@backstage/plugin-catalog-common/alpha';
 
+<<<<<<< HEAD
 import { githubAuthApiRef } from '@backstage/core-plugin-api';
 //Themes
 import { myTheme } from './components/myThemes/myThemes';
@@ -45,6 +46,11 @@ import Brightness4Icon from '@material-ui/icons/Brightness4';
 //homepage import
 import { HomepageCompositionRoot } from '@backstage/plugin-home';
 import { HomePage } from './components/home/HomePage';
+=======
+import { HomePage } from './components/home/HomePage';
+import { myTheme } from './theme/myThemes';
+import { UnifiedThemeProvider } from '@backstage/theme';
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
 
 const app = createApp({
   apis,
@@ -66,6 +72,7 @@ const app = createApp({
     });
   },
   components: {
+<<<<<<< HEAD
     SignInPage: props => (
       <SignInPage
         {...props}
@@ -80,13 +87,19 @@ const app = createApp({
         ]}
       />
     ),
+=======
+    SignInPage: props => <SignInPage {...props} auto providers={['guest']} />,
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
   },
   themes: [
     {
       id: 'my-theme',
       title: 'My Custom Theme',
       variant: 'dark',
+<<<<<<< HEAD
       icon: <Brightness4Icon />,
+=======
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
       Provider: ({ children }) => (
         <UnifiedThemeProvider theme={myTheme} children={children} />
       ),
@@ -96,9 +109,14 @@ const app = createApp({
 
 const routes = (
   <FlatRoutes>
+<<<<<<< HEAD
     <Route path="/" element={<HomepageCompositionRoot />}>
       <HomePage />
     </Route>
+=======
+    <Route path="/" element={<HomePage />} />
+
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
     <Route path="/catalog" element={<CatalogIndexPage />} />
     <Route
       path="/catalog/:namespace/:kind/:name"

@@ -3,7 +3,11 @@
 apiVersion: backstage.io/v1alpha1
 kind: User
 metadata:
+<<<<<<< HEAD
   name: Vitorio-Pereira
+=======
+  name: guest
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
 spec:
   memberOf: [guests]
 ---

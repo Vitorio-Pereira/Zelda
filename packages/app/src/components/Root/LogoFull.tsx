@@ -1,9 +1,17 @@
 import { makeStyles } from '@material-ui/core';
+<<<<<<< HEAD
 
 const useStyles = makeStyles({
   svg: {
     width: 'auto',
     height: 30,
+=======
+import ZeldaLogo from '../../assets/logo-zelda.png';
+const useStyles = makeStyles({
+  png: {
+    width: '170px',
+    height: 'auto',
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
   },
   path: {
     fill: '#7df3e1',
@@ -12,6 +20,7 @@ const useStyles = makeStyles({
 const LogoFull = () => {
   const classes = useStyles();
 
+<<<<<<< HEAD
   return (
     <svg
       className={classes.svg}
@@ -24,6 +33,9 @@ const LogoFull = () => {
       />
     </svg>
   );
+=======
+  return <img src={ZeldaLogo} alt="Logo!" className={classes.png} />;
+>>>>>>> 8bd0ed03de154d9bcbd1f8b766f00c89c05e2360
 };
 
 export default LogoFull;
